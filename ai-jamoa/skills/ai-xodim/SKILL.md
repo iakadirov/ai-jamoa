@@ -12,7 +12,7 @@ Diagnostika natijasidagi bitta agentni **foydalanuvchining shaxsiy skill paketig
 - Yo'riqnoma matni, huquqlar (erkin / tugma / yopiq) va ishlar ro'yxati — faqat `hisob.py xodim` dan. O'zgartirma.
 - Xotiraga faqat foydalanuvchi aytgan faktlarni yoz. Bilinmaganini «___» qoldir — agent u haqida «aniqlab beraman» deydi.
 - Yasalgan xodim **L1 (yordamchi) rejimida** ishlaydi: tashqariga ketadigan har narsa qoralama, foydalanuvchi o'zi yuboradi.
-- Bir xabarda bitta savol bloki (tanlov vositasi bo'lsa — shu bilan).
+- Bir xabarda bitta savol bloki. Variantli savol — har doim tanlov formasi vositasi bilan (`ask_user_input_v0`), so'ramasdan; matnli ro'yxat faqat vosita yo'q bo'lsa.
 
 ## Oqim
 

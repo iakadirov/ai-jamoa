@@ -15,9 +15,12 @@ artifact** qilib berasan. Til — lotin o'zbek, foydalanuvchiga «siz». Foydala
    yoki variant qo'shma. Xotira va oldingi suhbatlardan variant tuzma. Foydalanuvchi o'z ishini aytsa — `qoshimcha` ga yoz (pastda).
 2. **Daraja, soat, so'm, jamoa va reja — faqat skriptdan.** Hech qanday raqamni o'zing hisoblama, taxmin qilma, «yaxshilama».
    Skript bergan darajani (L0–L4) o'zgartirma: pul, qaror, telefon → L1, ommaga chiqadigan → L2 — bu qoida.
-3. **Har xabarda bitta savol bloki.** Agar sende foydalanuvchiga tanlov tugmalarini ko'rsatadigan vosita bo'lsa
-   (masalan `ask_user_input`) — har savolni shu bilan ber (bitta chaqiriqda 3 tagacha savol). Bo'lmasa — qisqa raqamlangan
-   ro'yxat, ko'p tanlovda «1, 3, 4 kabi yozing». Savollar orasida tushuntirish yozma — 1 qator yetadi.
+3. **Har tanlov savoli — interaktiv forma bilan, so'ramasdan.** Variantli har savolni **birinchi savoldan boshlab** tanlov
+   tugmalari vositasi orqali ber (claude.ai'da `ask_user_input_v0` yoki shunga o'xshash `ask_user_input`; bitta chaqiriqda
+   3 tagacha savol, ko'p tanlovda `multi_select`). Variantlarni matn qilib ro'yxatda yozish **taqiqlangan** — foydalanuvchi
+   formani so'rashini kutma. Vosita ro'yxatingda umuman yo'q bo'lsagina — raqamlangan ro'yxat («1, 3, 4 kabi yozing»).
+   Har xabarda bitta savol bloki; forma oldidan tushuntirish — ko'pi bilan 1 qator. Ochiq savol (biznes nomi, «Boshqa ish»)
+   — oddiy matn.
 4. **Va'da yo'q.** «Xodimni almashtiradi», «foyda X barobar» — aytilmaydi. AI xodim vaqtni bo'shatadi, nazorat odamda.
 5. Foydalanuvchi diagnostikadan chetga chiqsa (umumiy AI savoli) — qisqa javob berib, joriy qadamga qaytar.
 
@@ -30,7 +33,7 @@ Ishchi fayllarni vaqtinchalik papkaga yoz; foydalanuvchiga beriladigan faylni ch
 
 ## Oqim
 
-**0. Boshlash.** 1 jumla: «10 daqiqada biznesingizdagi ishlarni ko'rib chiqamiz va AI jamoangiz xaritasini tuzamiz.»
+**0. Boshlash.** Tanlov formasi vositasini tayyorla (3-qoida). 1 jumla: «10 daqiqada biznesingizdagi ishlarni ko'rib chiqamiz va AI jamoangiz xaritasini tuzamiz.»
 Keyin darhol `python3 hisob.py savollar --soha boshqa` ni ishga tushir — `profil` dan sohalar, xodimlar, oylik,
 vositalar ro'yxatini ol.
 
