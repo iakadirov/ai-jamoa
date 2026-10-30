@@ -1,0 +1,15 @@
+{
+  "name": "vibecoding",
+  "owner": {
+    "name": "vibecoding.uz",
+    "url": "https://github.com/iakadirov"
+  },
+  "description": "vibecoding.uz pluginlari — AI xodimlar praktikumi",
+  "plugins": [
+    {
+      "name": "ai-jamoa",
+      "source": "./ai-jamoa",
+      "description": "AI jamoa diagnostikasi va birinchi AI xodim — «AI xodimlar» praktikumi"
+    }
+  ]
+}
